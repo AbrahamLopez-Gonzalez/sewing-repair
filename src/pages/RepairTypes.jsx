@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TypesOfRepair() {
+export default function RepairTypes() {
   return (
     <>
       <p>
