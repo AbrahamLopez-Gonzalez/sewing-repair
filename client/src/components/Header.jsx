@@ -20,9 +20,6 @@ export default function Header() {
           <Link to='/repair-types'>
             <li className='hidden sm:inline text-slate-400 hover:underline'>RepairTypes</li>
           </Link>
-          <Link to='/brands-served'>
-            <li className='hidden sm:inline text-slate-400 hover:underline'>BradsServed</li>
-          </Link>
           <Link to='/gallery'>
             <li className='hidden sm:inline text-slate-400 hover:underline'>Gallery</li>
           </Link>
