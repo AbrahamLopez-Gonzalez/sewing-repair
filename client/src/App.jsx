@@ -1,21 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import RepairTypes from "./pages/RepairTypes";
-import Gallery from "./pages/Gallery";
-import ContactUs from "./pages/ContactUs";
-import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage.jsx";
+import RepairTypesPage from "./pages/RepairTypesPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
+import ContactUsPage from "./pages/ContactUsPage.jsx";
+import Header from "./components/Header.jsx";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/repair-types" element={<RepairTypes />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/repair-types" element={<RepairTypesPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
+
+export default App;
